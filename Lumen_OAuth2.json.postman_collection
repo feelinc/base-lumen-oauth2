@@ -17,7 +17,7 @@
 		{
 			"id": "10aed0f0-6bb6-45af-e8d4-164322d80ef0",
 			"headers": "Authorization: Bearer 9jQpT6eyfd0JOUCWvgp9WBefWSj5bze4H5O9jUVo\n",
-			"url": "http://lumen-oauth2.sule.dev/v1/authenticate",
+			"url": "http://localhost/api/v1/authenticate",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -49,7 +49,7 @@
 		{
 			"id": "14b6ae50-cc12-cbb0-ddc4-1a414af120c7",
 			"headers": "Authorization: Bearer oDt2gie4QdeHcU5g9nKNu1PmKGkWog2mUNFUFE5w\n",
-			"url": "http://lumen-oauth2.sule.dev/v1/users/1",
+			"url": "http://localhost/api/v1/users/1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -105,7 +105,7 @@
 		{
 			"id": "4389888f-da06-7825-f9e1-05bbdd19d851",
 			"headers": "",
-			"url": "http://lumen-oauth2.sule.dev/authorizations",
+			"url": "http://localhost/api/authorizations",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -155,7 +155,7 @@
 		{
 			"id": "55a10cb1-f19d-c2f3-78e2-f2be62e55f2e",
 			"headers": "",
-			"url": "http://lumen-oauth2.sule.dev/authorizations",
+			"url": "http://localhost/api/authorizations",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
