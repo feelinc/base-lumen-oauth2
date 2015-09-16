@@ -38,7 +38,7 @@ class AuthMiddleware
     }
 
     if ( ! $isError) {
-      if ( ! isset($identifiedOAuth['user'])) {
+      if (is_null($identifiedOAuth['user'])) {
         $isError = true;
       }
     }

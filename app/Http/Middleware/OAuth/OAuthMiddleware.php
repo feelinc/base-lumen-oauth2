@@ -70,7 +70,7 @@ class OAuthMiddleware
       $response = new Response([
         'error'   => $e->getCode(),
         'message' => $e->getMessage()
-        ], 500, []);
+      ], 500, []);
 
       $isError = true;
 
