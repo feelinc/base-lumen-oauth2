@@ -1,0 +1,212 @@
+{
+	"id": "3a34645b-111d-6412-f071-5215452cd77d",
+	"name": "Lumen OAuth2",
+	"description": "",
+	"order": [
+		"4389888f-da06-7825-f9e1-05bbdd19d851",
+		"55a10cb1-f19d-c2f3-78e2-f2be62e55f2e",
+		"10aed0f0-6bb6-45af-e8d4-164322d80ef0",
+		"14b6ae50-cc12-cbb0-ddc4-1a414af120c7"
+	],
+	"folders": [],
+	"timestamp": 1442390428374,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "10aed0f0-6bb6-45af-e8d4-164322d80ef0",
+			"headers": "Authorization: Bearer 9jQpT6eyfd0JOUCWvgp9WBefWSj5bze4H5O9jUVo\n",
+			"url": "http://lumen-oauth2.sule.dev/v1/authenticate",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "me@sulaeman.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "12345",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1442390638728,
+			"name": "User Login",
+			"description": "",
+			"collectionId": "3a34645b-111d-6412-f071-5215452cd77d",
+			"responses": []
+		},
+		{
+			"id": "14b6ae50-cc12-cbb0-ddc4-1a414af120c7",
+			"headers": "Authorization: Bearer oDt2gie4QdeHcU5g9nKNu1PmKGkWog2mUNFUFE5w\n",
+			"url": "http://lumen-oauth2.sule.dev/v1/users/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "refresh_token",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "testclient",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "http://localhost/api/",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "basic email",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "ulo15SWm0edPW7gHqCdtHQxM0E26uWapuF61VHId",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1442390993027,
+			"name": "Get a User",
+			"description": "",
+			"collectionId": "3a34645b-111d-6412-f071-5215452cd77d",
+			"responses": []
+		},
+		{
+			"id": "4389888f-da06-7825-f9e1-05bbdd19d851",
+			"headers": "",
+			"url": "http://lumen-oauth2.sule.dev/authorizations",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "testclient",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "http://localhost/api/",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "basic email",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1442390627652,
+			"name": "Authorization",
+			"description": "",
+			"collectionId": "3a34645b-111d-6412-f071-5215452cd77d",
+			"responses": []
+		},
+		{
+			"id": "55a10cb1-f19d-c2f3-78e2-f2be62e55f2e",
+			"headers": "",
+			"url": "http://lumen-oauth2.sule.dev/authorizations",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "refresh_token",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "testclient",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "http://localhost/api/",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "basic email",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "ulo15SWm0edPW7gHqCdtHQxM0E26uWapuF61VHId",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1442390976502,
+			"name": "Refresh Token",
+			"description": "",
+			"collectionId": "3a34645b-111d-6412-f071-5215452cd77d",
+			"responses": []
+		}
+	]
+}
